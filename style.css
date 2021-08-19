@@ -46,7 +46,7 @@ html{
 
 .navbar .logo a span{
     color: #fff;
-    transition: all 0.3s ease ;
+    font-weight: bold;
 }
 
 .navbar.sticky .logo a span{
@@ -76,6 +76,9 @@ html{
     border-bottom: 3px solid #3096d5;
     text-decoration: none;
 }
+
+
+
 
 .menu-btn{
     color: #fff;
@@ -143,10 +146,10 @@ html{
 }
 
 .text-container .container .sub{
-    color: #ffe6c7;
+    color: #f8d3a6;
     font-style: italic;
     margin: 20px 0;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
@@ -186,14 +189,22 @@ html{
         left: 0;
     }
 
+    
+
     .navbar .menu li{
         display: block;
     }
     .navbar .menu li a{
         display: inline-block;
         margin: 20px 0;
-        font-size: 20px;
+        font-size: 20px; 
     }
+
+    .navbar .menu li .menu-btn {
+        border: none;
+        font-size: 22px;
+    }
+
 
     .two{
         font-size: 20px;
