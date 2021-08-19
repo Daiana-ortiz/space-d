@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;;
+}
+
+/* NAVBAR STYLING */
+
+.header{
+    background-image: url(/assets/espacio.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Lato', sans-serif;
+    transition: all 0.3s ease ;
+}
+
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-style: italic;
+    text-decoration: none;
+    padding-left: 200px;
+}
+
+.navbar .logo a span{
+    color: #fff;
+    transition: all 0.3s ease ;
+}
+
+.navbar.sticky .logo a span{
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar .menu{
+    margin-right: 450px;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+.navbar .menu li a{
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    text-decoration-color: #3096d5;
+}
+
+
+.menu-btn{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.btn{
+    border-radius:42px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size: 0.9em;
+	padding:7px 30px;
+	text-decoration:none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.one{
+    background: rgb(255,200,221);
+    background: linear-gradient(80deg, rgba(255,200,221,1) 0%, rgba(255,101,185,1) 100%);
+
+}  
+
+.two{
+    background: rgb(137,39,221);
+    background: linear-gradient(356deg, rgba(137,39,221,1) 0%, rgba(186,85,210,1) 100%);
+    padding:15px 30px;
+}
+
+.btn.one:hover{
+    background: rgb(255,101,185);
+    background: linear-gradient(80deg, rgba(255,101,185,1) 0%, rgba(255,200,221,1) 100%);
+
+}
+
+.btn.two:hover{
+    background: rgb(186,85,210);
+    background: linear-gradient(356deg, rgba(186,85,210,1) 0%, rgba(137,39,221,1) 100%);
+} 
+
+
+/* HOME STYLING */
+
+.home{
+    margin: 12% 10%;
+    width: 30%;
+    height: 40%;
+}
+
+.home .contenido h2{
+    font-size: 4rem;
+    color: #852cde;
+    margin-bottom: 20px;
+    border-left: 5px solid #852cde;
+    padding-left: 15px;
+}
+
+.home .contenido p{
+    color: #ffe6c7;
+    font-style: italic;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.home .contenido .boton{
+    width: 90%;
+    height: 30px;
+    text-align: center;
+}
+
+
+/* -------------------- MEDIA QUERYES! ------------------------------ */
+
+@media (max-width: 1300px){
+    .home {
+        margin: 5% 10%;
+    }
+
+    .navbar .menu{
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 982px){
+    .navbar .logo a{
+        padding-left: 10px;
+    }
+    
+    .menu-btn{
+        display: block;
+        z-index: 999;
+        padding-right: 10px;
+    }
+
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+
+    .navbar .menu{
+       position: fixed; 
+       height: 100vh;
+       width: 100%;
+       left: -200%;
+       top: 0;
+       background: #25286b;
+       text-align: center;
+       padding-top: 80px;
+       transition: all 0.3s eas;
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    .two{
+        font-size: 20px;
+    }
+
+
+}
+
+
+@media (max-width:850px){
+    .home {
+        margin: 10% 7%;
+    }
+
+    .two {
+        padding: 10px 15px;
+    }
+
+    .home .contenido h2 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width:634px){
+
+    .home {
+        width: 80%;
+        margin: 15% 5%;
+    }
+
+    .home .contenido h2 {
+        font-size: 35px;
+    }
+    
+    .two {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+
+}
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
