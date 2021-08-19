@@ -7,6 +7,10 @@
     font-family: 'Lato', sans-serif;;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* NAVBAR STYLING */
 
 .header{
@@ -57,10 +61,11 @@
 .navbar .menu li {
     list-style: none;
     display: inline-block;
+    
 }
 
 
-.navbar .menu li a{
+.navbar .menu li .menu-btn{
     display: block;
     text-transform: uppercase;
     color: #fff;
@@ -68,9 +73,9 @@
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
-    text-decoration-color: #3096d5;
+    border-bottom: 3px solid #3096d5;
+    text-decoration: none;
 }
-
 
 .menu-btn{
     color: #fff;
@@ -91,6 +96,7 @@
 }
 
 .one{
+    margin-left: 15px;
     background: rgb(255,200,221);
     background: linear-gradient(80deg, rgba(255,200,221,1) 0%, rgba(255,101,185,1) 100%);
 
@@ -173,7 +179,7 @@
        background: #25286b;
        text-align: center;
        padding-top: 80px;
-       transition: all 0.3s eas;
+       transition: all 0.3s ease;
     }
 
     .navbar .menu.active {
