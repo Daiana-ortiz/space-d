@@ -527,7 +527,7 @@ footer span a:hover{
     }
 
     .nosotros{
-        height: 78vh;
+        height: 55vh;
     }
 
     .imagen{
@@ -553,6 +553,7 @@ footer span a:hover{
         font-size: 23px;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .contact form .inputBox {
@@ -587,9 +588,6 @@ footer span a:hover{
 }
 
 @media (max-width: 350px){
-    .nosotros{
-        height: 60vh;
-    }
 
     .contact .contenedor{
         height: 80vh
