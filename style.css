@@ -11,7 +11,11 @@ html{
     scroll-behavior: smooth;
 }
 
-/* NAVBAR STYLING */
+body{
+    overflow-x: hidden;
+ }
+
+/* --------------------NAVBAR STYLING----------------- */
 
 .header{
     background-image: url(/assets/espacio.png);
@@ -123,7 +127,7 @@ html{
 } 
 
 
-/* HOME STYLING */
+/*----------------- HOME STYLING ------------------*/
 
 .text-container{
     display: flex;
@@ -153,9 +157,273 @@ html{
 }
 
 
+/* ----------------- NOSOTROS STYLING ----------------  */
 
+.nosotros{
+    background-image: url(/assets/space3.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+
+.nosotros-contenedor{
+    display: block;
+    width: 100%;
+    justify-content: center; 
+    
+}
+
+.contenedor{
+    text-align: center;
+}
+
+
+.title{
+    margin: 35px 0;
+    width: 100%;
+    color: #fff;
+    font-size: 30px;
+}
+.contenido{
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.imagen{
+    width: 40%;
+}
+
+.texto{
+    background: rgb(25, 25, 25);
+    background: linear-gradient(176deg, rgba(159,66,217,1) 33%, rgba(244,184,221,1) 99%, rgba(255,200,221,1) 100%);
+    width: 40%;
+    text-align: justify;
+    font-size: 21px;
+    padding: 10px;
+}
+
+.texto p{
+    padding: 7px;
+    color: #fff;
+}
+
+.texto span{
+    font-style: italic;
+}
+
+
+/* ----------------- SERVICIOS STYLING ----------------  */
+
+.servicios{
+    background-image: url(/assets/space2.png);
+    background-position:left;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+}
+
+
+.container-services{
+    width: 100%;
+    text-align: center;
+}
+
+.servicios .container-services .title{
+    color: #852cde;
+}
+
+.serv-content{
+
+    display: flex;
+    justify-content: space-around; 
+}
+
+.card{
+    width: 25%;
+    background: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 40px 20px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/* .card:hover{
+    background: white;
+} */
+
+.box{
+    transition: all 0.3s ease;
+}
+
+.servicios .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.card i{
+    font-size: 50px;
+    color:#ffffff;
+    transition: 0.3s ease all;
+}
+
+
+.servicios .serv-content .card .text{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 10px 0 7px 0;
+    color: #fff;
+}
+
+.box p{
+    color: #fff;
+    padding: 15px 0;
+}
+
+/* ---------------------CONTACTO STYLING ------------------------*/
+
+.contact {
+    background-image: url(/assets/space3.png);
+    background-size: cover;
+    background-position:bottom;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.contact .contenedor{
+    margin: 0 auto;
+    width: 70%;
+}
+.contact form{
+    text-align: center;
+    padding: 1rem;
+}
+
+.contact form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .inputBox input,
+.contact form textarea{
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    background: #ffcddf;
+    text-transform: none;
+    margin: 1rem 0;
+    width: 46%;
+
+}
+
+.contact form textarea{
+    height: 15rem;
+    resize: none;
+    width: 97.6%;
+}
+
+
+/*------------------------- NEWSLETTER STYLING----------------------- */
+
+
+.newsletter{
+    background-image: url(/assets/espacio-sin-hombre.png);
+    background-size: cover;
+    background-position: initial;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.newsletter h3{
+    font-size: 3rem;
+    color:white;
+}
+
+.newsletter form {
+    max-width: 55rem;
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    background: rgba(0,0,0,.1);
+}
+
+.newsletter form .box{
+    width: 100%;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    text-transform: none ;
+}
+
+.newsletter form .btn{
+    margin: 10px;
+}
+
+
+/* ------------------FOOTER STYLING --------------------*/
+
+footer{
+    background: #171a47;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+footer span a{
+    font-style: italic;
+    text-decoration: none;
+    color: #fff;
+}
+
+footer span a:hover{
+    text-decoration: underline;
+}
 
 /* -------------------- MEDIA QUERYES! ------------------------------ */
+
+@media (max-width: 1255px){
+
+
+    .nosotros-contenedor{
+        overflow-x: hidden;
+    }
+    
+    .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contenido{
+        display: table-row;
+        flex-direction: row;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+
+
+    .texto{
+        width: 97%;
+        padding: 20px 5px;
+    }
+
+    .texto p{
+        font-size: 16px;
+        padding: 5px 0;
+    }
+
+    .imagen{
+        display: none;
+    }
+}
 
 
 @media (max-width: 982px){
@@ -210,8 +478,10 @@ html{
         font-size: 20px;
     }
 
+    
 
 }
+
 
 @media (max-width: 670px){
 
