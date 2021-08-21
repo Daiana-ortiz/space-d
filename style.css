@@ -392,6 +392,29 @@ footer span a:hover{
     text-decoration: underline;
 }
 
+/* -----------------------  LOG IN STYLING --------------*/
+
+.titulo2{
+    font-size: 45px;
+    color: #852cde;
+}
+
+.container .inputBox{
+    border-radius: 10px;
+    border: 1px solid #852cde;
+    width: 40%;
+    margin: 30px 0;
+}
+
+.container .inputBox input{
+    padding: 10px;
+    border-radius: 10px;
+    width: 92%;
+}
+
+.container{
+    margin: 10%;
+}
 /* -------------------- MEDIA QUERYES! ------------------------------ */
 
 @media (max-width: 1255px){
@@ -587,6 +610,29 @@ footer span a:hover{
     .newsletter form .box {
         width: 80%;
     }
+
+    .titulo2{
+        font-size: 45px;
+        color: #852cde;
+    }
+    
+    .container .inputBox{
+        border-radius: 10px;
+        border: 1px solid #852cde;
+        width: 100%;
+        margin: 30px 0;
+    }
+    
+    .container .inputBox input{
+        padding: 10px;
+        border-radius: 10px;
+        width: 88%;
+    }
+    
+    .container{
+        margin: 10%;
+    }
+
 }
 
 @media (max-width: 350px){
@@ -594,6 +640,9 @@ footer span a:hover{
     .contact .contenedor{
         height: 80vh
     }
+
+   
+    
 }
 
 
