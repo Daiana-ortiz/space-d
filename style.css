@@ -18,10 +18,10 @@ body{
 /* --------------------NAVBAR STYLING----------------- */
 
 .header{
-    background-image: url(/assets/espacio.png);
+    background-image: url(/assets/space3.png);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 115vh;
     width: 100%;
 }
 
@@ -133,7 +133,7 @@ body{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     align-items: center;
 }
 
@@ -160,9 +160,6 @@ body{
 /* ----------------- NOSOTROS STYLING ----------------  */
 
 .nosotros{
-    background-image: url(/assets/space3.png);
-    background-size: cover;
-    background-position: center;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -180,20 +177,19 @@ body{
     text-align: center;
 }
 
-
 .title{
-    margin: 35px 0;
     width: 100%;
-    color: #fff;
+    color: #852cde;
     font-size: 30px;
+    margin-top: 3%;
 }
+
 .contenido{
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     align-items: center;
     display: flex;
     justify-content: space-evenly;
-
 }
 
 .imagen{
@@ -222,9 +218,7 @@ body{
 /* ----------------- SERVICIOS STYLING ----------------  */
 
 .servicios{
-    background-image: url(/assets/space2.png);
-    background-position:left;
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     display: flex;
 }
@@ -236,7 +230,8 @@ body{
 }
 
 .servicios .container-services .title{
-    color: #852cde;
+    color: #f98fc5;
+    margin-bottom: 40px;
 }
 
 .serv-content{
@@ -247,12 +242,13 @@ body{
 
 .card{
     width: 25%;
-    background: black;
+    background:#fff;
     text-align: center;
     border-radius: 6px;
     padding: 40px 20px;
     cursor: pointer;
     font-size: 30px;
+    border: #f8d3a6 1px solid;
 }
 
 /* .card:hover{
@@ -269,7 +265,7 @@ body{
 
 .card i{
     font-size: 50px;
-    color:#ffffff;
+    color:#f8d3a6;
     transition: 0.3s ease all;
 }
 
@@ -278,11 +274,11 @@ body{
     font-size: 35px;
     font-weight: bold;
     margin: 10px 0 7px 0;
-    color: #fff;
+    color: #ffa48e;
 }
 
 .box p{
-    color: #fff;
+    color: #f8d3a6;
     padding: 15px 0;
 }
 
@@ -291,15 +287,22 @@ body{
 .contact {
     background-image: url(/assets/space3.png);
     background-size: cover;
-    background-position:bottom;
-    height: 100vh;
+    background-position:left;
+    height: 90vh;
     width: 100%;
     display: flex;
 }
 
 .contact .contenedor{
-    margin: 0 auto;
-    width: 70%;
+    margin: 10px auto;
+    width: 50%;
+    height: 630px;
+    background: rgb(35,49,120);
+    background: linear-gradient(172deg, rgba(35,49,120,1) 0%, rgba(21,111,215,1) 100%);
+}
+
+.contact .contenedor .title{
+    color: #fff;
 }
 .contact form{
     text-align: center;
@@ -316,7 +319,7 @@ body{
 .contact form textarea{
     padding: 0.8rem;
     font-size: 1.2rem;
-    background: #ffcddf;
+    background: #fff;
     text-transform: none;
     margin: 1rem 0;
     width: 46%;
@@ -326,7 +329,7 @@ body{
 .contact form textarea{
     height: 15rem;
     resize: none;
-    width: 97.6%;
+    width: 96.7%;
 }
 
 
@@ -334,16 +337,16 @@ body{
 
 
 .newsletter{
-    background-image: url(/assets/espacio-sin-hombre.png);
+    background-image: url(/assets/space2.png);
     background-size: cover;
-    background-position: initial;
+    background-position: center;
     text-align: center;
     padding: 5rem 2rem;
 }
 
 .newsletter h3{
     font-size: 3rem;
-    color:white;
+    color: #852cde ;
 }
 
 .newsletter form {
@@ -352,7 +355,7 @@ body{
     align-items: center;
     margin: 1rem auto;
     padding: 1.5rem;
-    background: rgba(0,0,0,.1);
+    background: #852cde27;
 }
 
 .newsletter form .box{
@@ -370,7 +373,8 @@ body{
 /* ------------------FOOTER STYLING --------------------*/
 
 footer{
-    background: #171a47;
+    background: rgb(35,49,120);
+    background: linear-gradient(90deg, rgba(35,49,120,1) 0%, rgba(234,129,200,1) 100%);
     padding: 20px 23px;
     color: #fff;
     text-align: center;
@@ -390,10 +394,6 @@ footer span a:hover{
 
 @media (max-width: 1255px){
 
-
-    .nosotros-contenedor{
-        overflow-x: hidden;
-    }
     
     .contenedor{
         display: flex;
@@ -405,8 +405,9 @@ footer span a:hover{
         flex-direction: row;
     }
 
-    .title{
+    .nosotros-contenedor .contenedor .title{
         font-size: 20px;
+        margin: 20px 0;
     }
 
 
@@ -420,9 +421,27 @@ footer span a:hover{
         padding: 5px 0;
     }
 
-    .imagen{
-        display: none;
+    
+
+    .serv-content {
+        display: block;
     }
+
+
+    .card {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .servicios .serv-content .card .text{
+        font-size: 30px;
+    }
+
+    .servicios .serv-content .card .box p{
+        font-size: 20px;
+    }
+
+
 }
 
 
@@ -485,13 +504,16 @@ footer span a:hover{
 
 @media (max-width: 670px){
 
+    html{
+        overflow-x: scroll;
+    }
+
     .text-container .container{
         width: 70%;
     }
 
     .text-container .container .titulo{
         font-size: 5vh;
-        
     }
 
     .text-container .container .sub{
@@ -503,8 +525,71 @@ footer span a:hover{
         padding:7px 30px;
         letter-spacing: 2px;
     }
-   
+
+    .nosotros{
+        height: 78vh;
+    }
+
+    .imagen{
+        display: none;
+    }
+
+    .servicios{
+        height: auto;
+    }
+
+    .servicios .container-services .title{
+        font-size: 22px;
+    }
+
+    .contact .contenedor {
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .contact .contenedor .title {
+        color: #fff;
+        font-size: 23px;
+    }
+
+    .contact form .inputBox {
+        flex-wrap: nowrap;
+    }
+
+    .contact form textarea {
+        height: 5rem;
+    }
+
+    .contact form .inputBox input, .contact form textarea {
+        margin: 1rem 0.1em;
+        width: 90%;
+    }
+
+    .newsletter form {
+        width: 100%;
+        display: block;
+    }
+
+    .newsletter h3 {
+        font-size: 2.5rem;
+    }
+
+    .newsletter form {
+        width: auto;
+    }
+
+    .newsletter form .box {
+        width: 80%;
+    }
 }
+
+@media (max-width: 350px){
+    .nosotros{
+        height: 90vh;
+    }
+}
+
 
 
 
