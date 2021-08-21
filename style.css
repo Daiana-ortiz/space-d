@@ -651,11 +651,33 @@ footer span a:hover{
 
     .contact .contenedor{
         height: 80vh
-    }
-
-   
+    } 
     
 }
+
+@media (max-width: 900px) and (orientation: landscape){
+    .nosotros {
+        height: 240vh;
+    }
+
+    .servicios {
+        height: 230vh;
+    }
+
+    .contact .contenedor {
+        margin: auto;
+        width: 100%;
+    }
+
+    .contact form {
+        margin: 0 auto;
+    }
+
+    .contact {
+        height: 146vh;
+    }
+}
+
 
 
 
