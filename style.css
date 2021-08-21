@@ -586,7 +586,11 @@ footer span a:hover{
 
 @media (max-width: 350px){
     .nosotros{
-        height: 90vh;
+        height: 75vh;
+    }
+
+    .contact .contenedor{
+        height: 80vh
     }
 }
 
