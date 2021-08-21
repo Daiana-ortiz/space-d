@@ -64,8 +64,12 @@ body{
 
 .navbar .menu li {
     list-style: none;
-    display: inline-block;
-    
+    display: inline-block; 
+}
+
+.navbar .menu li a:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
 
 
@@ -80,8 +84,6 @@ body{
     border-bottom: 3px solid #3096d5;
     text-decoration: none;
 }
-
-
 
 
 .menu-btn{
